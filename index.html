@@ -19,17 +19,45 @@
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
-	<body>
+	<body id="index">
 		<!--[if lt IE 7]>
 			<p class="browsehappy">Você está usando um navegador <strong>muito velho</strong>. Faça o download do  <a href="https://www.google.com/intl/pt-BR/chrome/browser/">Chrome</a> Para uma melhor experiência.</p>
 		<![endif]-->
 
 		<!-- Add your site or application content here -->
-		<p>Hello world! This is HTML5 Boilerplate.</p>
+
+
+
+		<div class="wrap">
+
+			<a href="javascript:void(0);" id="apresentacao" ></a>
+			<a href="javascript:void(0);" id="entrar"></a>
+			<a href="javascript:void(0);" id="creditos"></a>
+
+			<div id="tela1-conteudo">
+				<h1>Leitura de Imagem</h1>
+				<p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.</p>
+
+			</div>
+
+		</div>
 
 		<script src="js/vendor/jquery-1.10.2.min.js"></script>
-		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+
+			$("#apresentacao").hover(function () {
+				$("#tela1-conteudo, #entrar, #creditos").toggleClass("grayscale");
+			});
+			$("#entrar").hover(function () {
+				$("#tela1-conteudo, #apresentacao, #creditos").toggleClass("grayscale");
+			});
+			$("#creditos").hover(function () {
+				$("#tela1-conteudo, #apresentacao, #entrar").toggleClass("grayscale");
+			});
+
+		</script>
 
 	</body>
 </html>

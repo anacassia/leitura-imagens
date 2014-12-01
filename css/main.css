@@ -153,44 +153,115 @@ textarea {
    Meus
    ========================================================================= */
 /* * {transition: all ease-in-out 100ms;} */
-a {outline: 0px; border: 0px none;}
+a {outline: 0px; border: 0px none; text-decoration: none;}
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
 .grayscale {
 -webkit-filter: grayscale(100%);
 -moz-filter: grayscale(100%);
 filter: grayscale(100%);
 }
 
-.wrap {
+#wrap {
 	width: 850px;
 	height: 700px;
 	display: block;
 	margin: 0 auto;
 	position: relative;
+	overflow: hidden;
 }
-#index #apresentacao, #index #entrar, #index #creditos {
+
+.mockdrop {
+	position: absolute;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.66);
+	background-image: url(../img/tela1/luz.png) ;
+	background-position: 0px bottom;
+	background-repeat: no-repeat ;
+	top: 0px;
+	left: 0px;
+	width: 850px;
+	height: 700px;
+	display: block;
+	padding: 67px 83px 0 84px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.lightbox {
+	background-color: #e5e7e7;
+	display: block;
+	width: 683px;
+	height: 565px;
+	border-radius: 12px;
+	position: relative;
+}
+.lightbox .lightbox-wrap {
+	position: relative;
+}
+.lightbox .lightbox-header {
+	height: 97px;
+	background: url(../img/tela1/header-1.jpg) repeat-x ;
+	text-align: center;
+	border-radius: 12px 12px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+.lightbox .lightbox-header h2 {
+	margin: 0 ;
+	display: inline-block;
+	font-weight: normal;
+	color: #e5e7e7;
+	font-family: 'Rokkitt-Regular';
+	font-size: 35px;
+}
+.lightbox .lightbox-header h2 img {
+	margin-right: 0px;
+	position: relative;
+	top: -1px;
+	margin-right: 10px;
+}
+.lightbox .close-lightbox {
+	position: absolute;
+	display: block;
+	top: 11px;
+	right: 9px;
+	background: url(../img/tela1/sair.png) no-repeat  ;
+	width: 36px;
+	height: 36px;
+}
+.lightbox .lightbox-content {}
+/* Index */
+#index #bt-apresentacao, #index #bt-entrar, #index #bt-creditos {
 	display: block;
 	position: absolute;
 	z-index: 10;
 	top: 0px;
 	left: 0px;
 }
-#index #apresentacao, #index #entrar {
+#index #bt-apresentacao, #index #bt-entrar {
 
 	height: 86px;
 	width: 173px;
 	background-repeat: no-repeat;
 }
-#index #apresentacao {
+#index #bt-apresentacao {
 	background: url(../img/tela1/apresentacao.png);
 	left: 240px;
 	top: 425px;
 }
-#index #entrar {
+#index #bt-entrar {
 	background: url(../img/tela1/entrar.png);
 	left: 428px;
 	top: 425px;
 }
-#index #creditos {
+#index #bt-creditos {
 	width: 93px;
 	height: 108px;
 	background: url(../img/tela1/creditos.png) no-repeat -20px 0px;
@@ -204,7 +275,11 @@ filter: grayscale(100%);
 	display: block;
 	background: url(../img/tela1/tela-1-1.jpg) no-repeat;
 }
-#index #tela1-conteudo img {position: absolute; left: 0px; z-index: 1; top: 0px;}
+#index #tela1-conteudo img {
+	position: absolute;
+	left: 0px; z-index: 1;
+	 top: 0px;
+}
 #index #tela1-conteudo h1 {
 	text-align: center;
 	margin: 0px auto;
@@ -222,4 +297,43 @@ filter: grayscale(100%);
 	text-align: center;
 	color: #464646;
 	line-height: 24px;
+}
+
+#creditos {
+	padding: 17px 44px;
+}
+#creditos ul li {
+	font-size: 18px;
+	color: #464646;
+	font-family: 'Rokkitt-Regular';
+	margin-bottom: 24px;
+}
+#creditos ul li strong {
+	font-weight: normal;
+	font-family: 'Rokkitt-Bold';
+	color: #39a1a2;
+}
+#apresentacao {
+	padding: 22px 45px 0 45px;
+}
+#apresentacao p {
+	font-size: 18px;
+	color: #464646;
+	margin: 0 0 20px 0;
+	font-family: 'Rokkitt-Regular';
+}
+#apresentacao p strong {
+	font-family: 'Rokkitt-Bold';
+	font-weight: normal;
+	color: #a2393b;
+}
+#apresentacao iframe {
+	float: left;
+	width: 369px;
+	height: 228px;
+	margin: 0 25px 0px 0;
+	border: 0px none;
+}
+.paginator ul li {
+	display: inline-block;
 }

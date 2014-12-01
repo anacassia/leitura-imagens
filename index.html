@@ -17,7 +17,6 @@
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
-		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body id="index">
 		<!--[if lt IE 7]>
@@ -28,33 +27,31 @@
 
 
 
-		<div class="wrap">
+		<div id="wrap">
 
-			<a href="javascript:void(0);" id="apresentacao" ></a>
-			<a href="javascript:void(0);" id="entrar"></a>
-			<a href="javascript:void(0);" id="creditos"></a>
+			<a href="paginas/pagina1/apresentacao.html" id="bt-apresentacao" ></a>
+			<a href="paginas/pagina1/main.html" id="bt-entrar"></a>
+			<a href="paginas/pagina1/creditos.html" id="bt-creditos"></a>
 
 			<div id="tela1-conteudo">
 				<h1>Leitura de Imagem</h1>
 				<p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate. cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt.</p>
 
 			</div>
-
 		</div>
 
 		<script src="js/vendor/jquery-1.10.2.min.js"></script>
-		<script src="js/main.js"></script>
 
 		<script type="text/javascript">
 
-			$("#apresentacao").hover(function () {
-				$("#tela1-conteudo, #entrar, #creditos").toggleClass("grayscale");
+			$("#bt-apresentacao").hover(function () {
+				$("#tela1-conteudo, #bt-entrar, #bt-creditos").toggleClass("grayscale");
 			});
-			$("#entrar").hover(function () {
-				$("#tela1-conteudo, #apresentacao, #creditos").toggleClass("grayscale");
+			$("#bt-entrar").hover(function () {
+				$("#tela1-conteudo, #bt-apresentacao, #bt-creditos").toggleClass("grayscale");
 			});
-			$("#creditos").hover(function () {
-				$("#tela1-conteudo, #apresentacao, #entrar").toggleClass("grayscale");
+			$("#bt-creditos").hover(function () {
+				$("#tela1-conteudo, #bt-apresentacao, #bt-entrar").toggleClass("grayscale");
 			});
 
 		</script>

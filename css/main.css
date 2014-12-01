@@ -153,7 +153,7 @@ textarea {
    Meus
    ========================================================================= */
 /* * {transition: all ease-in-out 100ms;} */
-a {outline: 0px; border: 0px none; text-decoration: none;}
+a, a img {outline: 0px; border: 0px none; text-decoration: none;}
 ul {
 	margin: 0px;
 	padding: 0px;
@@ -334,6 +334,19 @@ filter: grayscale(100%);
 	margin: 0 25px 0px 0;
 	border: 0px none;
 }
+.paginator {
+	text-align: center;
+}
 .paginator ul li {
 	display: inline-block;
+	font-family: 'Rokkitt-Bold';
+	font-size: 18px;
+	color: #393632;
+	margin: 0 10px;
+}
+.paginator ul li a {
+	color: #393632;
+}
+.paginator ul li a.active {
+	color: #a2393b;
 }

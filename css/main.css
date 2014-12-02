@@ -350,3 +350,25 @@ filter: grayscale(100%);
 .paginator ul li a.active {
 	color: #a2393b;
 }
+/* leitura */
+#leitura #tela2-conteudo {
+	width: 850px;
+	height: 700px;
+	display: block;
+	background: url(../img/tela2/tela2main.jpg) no-repeat;
+}
+#leitura #tela2-conteudo img {
+	margin-top: 207px;
+}
+#pagina-web, #meme, #publicidade, #fotojornalismo, #livro-ilustrado, #leitura-logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+}
+#pagina-web {top: 306px; left: 675px;}
+#meme {top: 232px; left: 525px;}
+#publicidade {top: 275px; left: 347px;}
+#fotojornalismo {top: 234px; left: 198px;}
+#livro-ilustrado {top: 309px; left: 44px;}
+#leitura-logo {top: 88px; left: 319px;}

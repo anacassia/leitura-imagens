@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Leitura Imagens</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body id="leitura">
+		<!--[if lt IE 7]>
+			<p class="browsehappy">Você está usando um navegador <strong>muito velho</strong>. Faça o download do  <a href="https://www.google.com/intl/pt-BR/chrome/browser/">Chrome</a> Para uma melhor experiência.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+
+
+
+		<div id="wrap">
+
+			<a id="livro-ilustrado" href="livro-ilustrado.html"><img src="img/tela2/livro-ilustrado.png"></a>
+			<a id="fotojornalismo" href="fotojornalismo.html"><img src="img/tela2/fotojornalismo.png"></a>
+			<a id="publicidade" href="publicidade.html"><img src="img/tela2/publicidade.png"></a>
+			<a id="meme" href="meme.html"><img src="img/tela2/meme.png"></a>
+			<a id="pagina-web" href="pagina-web.html"><img src="img/tela2/pagina-web.png"></a>
+			<a id="leitura-logo" href="index.html"><img src="img/tela2/leitura-logo.png"></a>
+
+			<div id="tela2-conteudo">
+				<img src="img/tela2/todos.png">
+			</div>
+		</div>
+
+		<script src="js/vendor/jquery-1.10.2.min.js"></script>
+
+		<script type="text/javascript">
+
+			$("#pagina-web").hover(function () {
+				$("#meme, #publicidade, #fotojornalismo, #livro-ilustrado, #leitura-logo, #tela2-conteudo").toggleClass("grayscale");
+			});
+			$("#meme").hover(function () {
+				$("#pagina-web, #publicidade, #fotojornalismo, #livro-ilustrado, #leitura-logo, #tela2-conteudo").toggleClass("grayscale");
+			});
+			$("#publicidade").hover(function () {
+				$("#pagina-web, #meme, #fotojornalismo, #livro-ilustrado, #leitura-logo, #tela2-conteudo").toggleClass("grayscale");
+			});
+			$("#fotojornalismo").hover(function () {
+				$("#pagina-web, #meme, #publicidade, #livro-ilustrado, #leitura-logo, #tela2-conteudo").toggleClass("grayscale");
+			});
+			$("#livro-ilustrado").hover(function () {
+				$("#pagina-web, #meme, #publicidade, #fotojornalismo, #leitura-logo, #tela2-conteudo").toggleClass("grayscale");
+			});
+			$("#leitura-logo").hover(function () {
+				$("#pagina-web, #meme, #publicidade, #fotojornalismo, #livro-ilustrado, #tela2-conteudo").toggleClass("grayscale");
+			});
+
+		</script>
+
+	</body>
+</html>

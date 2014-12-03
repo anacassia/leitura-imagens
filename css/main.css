@@ -218,7 +218,7 @@ filter: grayscale(100%);
 	display: inline-block;
 	font-weight: normal;
 	color: #e5e7e7;
-	font-family: 'Rokkitt-Regular';
+	font-family: 'Rokkitt-Regular', sans-serif;
 	font-size: 35px;
 }
 .lightbox .lightbox-header h2 img {
@@ -299,7 +299,7 @@ filter: grayscale(100%);
 #index #tela1-conteudo p {
 	margin: 0px auto;
 	width: 536px;
-	font-family: 'Rokkitt-Regular';
+	font-family: 'Rokkitt-Regular', sans-serif;
 	font-size: 18px;
 	text-align: center;
 	color: #464646;
@@ -312,12 +312,12 @@ filter: grayscale(100%);
 #creditos ul li {
 	font-size: 18px;
 	color: #464646;
-	font-family: 'Rokkitt-Regular';
+	font-family: 'Rokkitt-Regular', sans-serif;
 	margin-bottom: 24px;
 }
 #creditos ul li strong {
 	font-weight: normal;
-	font-family: 'Rokkitt-Bold';
+	font-family: 'Rokkitt-Bold', sans-serif;
 	color: #39a1a2;
 }
 #apresentacao {
@@ -327,10 +327,10 @@ filter: grayscale(100%);
 	font-size: 18px;
 	color: #464646;
 	margin: 0 0 20px 0;
-	font-family: 'Rokkitt-Regular';
+	font-family: 'Rokkitt-Regular', sans-serif;
 }
 #apresentacao p strong {
-	font-family: 'Rokkitt-Bold';
+	font-family: 'Rokkitt-Bold', sans-serif;
 	font-weight: normal;
 	color: #a2393b;
 }
@@ -346,7 +346,7 @@ filter: grayscale(100%);
 }
 .paginator ul li {
 	display: inline-block;
-	font-family: 'Rokkitt-Bold';
+	font-family: 'Rokkitt-Bold', sans-serif;
 	font-size: 18px;
 	color: #393632;
 	margin: 0 10px;
@@ -453,7 +453,7 @@ filter: grayscale(100%);
 	background: rgb(162, 58, 59);
 	width: 477px;
 	color: white;
-	font-family: 'Rokkitt-Regular';
+	font-family: 'Rokkitt-Regular', sans-serif;
 	font-size: 18px;
 	padding: 9px 15px 13px 15px;
 	line-height: 22px;
@@ -539,7 +539,7 @@ left: 205px;
 	left: 76px;
 	color: #fff;
 	padding: 10px 0px 6px 51px;
-	font-family: 'Rokkitt-Regular';
+	font-family: 'Rokkitt-Regular', sans-serif;
 	font-size: 16px;
 	line-height: 20px;
 	border-bottom: 5px solid rgb(58, 54, 51);
@@ -550,6 +550,8 @@ left: 205px;
 }
 .bt-lightbox-st .more-info-light span {
 	position: relative;
+	width: 115px;
+	display: block;
 }
 .bt-lightbox-st .more-info-light span:after, .bt-lightbox-st .more-info-light span:before {
 	position: absolute;
@@ -578,13 +580,13 @@ left: 205px;
 	width: 109px;
 }
 .bt-lightbox-st#info-nuvem .more-info-light span:after, .bt-lightbox-st#info-nuvem .more-info-light span:before {
-	left: -98px;
+	left: -50px;
 	border-width: 38px 26px 38px 0;
 	border-color: transparent #39A1A2 transparent transparent;
 	top: -11px;
 }
 .bt-lightbox-st#info-nuvem .more-info-light span:before {
-	left: -100px;
+	left: -52px;
 	top: -9px;
 	border-width: 41px 28px 38px 0;
 	border-color: transparent #3A3633 transparent transparent;
@@ -610,12 +612,12 @@ left: 205px;
 	display: none;
 	position: absolute;
 	left: -10px;
-	top: -70px;
+	top: -50px;
 	background: rgb(57, 161, 162);
-	padding: 10px 17px 0 17px;
+	padding: 10px 16px 0 16px;
 	border-bottom: 3px solid #383530;
 	color: #fff;
-	font-family: 'Rokkitt-Regular';
+	font-family: 'Rokkitt-Regular', sans-serif;
 	line-height: 12px;
 	font-size: 12px;
 	height: 28px;
@@ -642,9 +644,9 @@ left: 205px;
 	border-color: #383530 transparent transparent transparent;
 }
 #pedestal #pedestal-content a#visual-bt div, #pedestal #pedestal-content a#texto-img-bt div {
-width: 94px;
+width: 96px;
 left: -29px;
-padding: 10px 12px 0 7px;
+padding: 10px 7px 0 7px;
 }
 #pedestal #pedestal-content a#visual-bt div:before, #pedestal #pedestal-content a#texto-img-bt div:before {
 	left: 48px;
@@ -674,4 +676,106 @@ padding: 10px 12px 0 7px;
 }
 #pedestal #pedestal-content #midiateca-bt {
 	margin-left: -4px;
+}
+
+#pedestal #pedestal-content a{
+	width: 61px;
+	height: 61px;
+	display: inline-block;
+}
+#abc-bt {
+	background: url(../img/tela3/abc.png);
+}
+#imagem-bt {
+	background: url(../img/tela3/imagem.png);
+}
+#texto-bt {
+	background: url(../img/tela3/texto.png);
+}
+#visual-bt {
+	background: url(../img/tela3/visual.png);
+}
+#texto-img-bt {
+	background: url(../img/tela3/texto-img.png);
+}
+#midiateca-bt {
+	background: url(../img/tela3/midiateca.png);
+}
+
+#abc-bt:hover {
+	background: url(../img/tela3/abc-h.png);
+}
+#imagem-bt:hover {
+	background: url(../img/tela3/imagem-h.png);
+}
+#texto-bt:hover {
+	background: url(../img/tela3/texto-h.png);
+}
+#visual-bt:hover {
+	background: url(../img/tela3/visual-h.png);
+}
+#texto-img-bt:hover {
+	background: url(../img/tela3/texto-img-h.png);
+}
+#midiateca-bt:hover {
+	background: url(../img/tela3/midiateca-h.png);
+}
+.mediateca-box ul li {
+	overflow: hidden;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #c5c3c4;
+}
+.mediateca-box ul li:last-child {
+	border-bottom: 0px none;
+}
+.mediateca-box ul li span {
+	width: 145px;
+	height: 105px;
+	display: block;
+	float: left;
+	position: relative;
+	margin-right: 15px;
+}
+.mediateca-box ul li span img {
+	border: 5px solid #c6c4c7;
+	margin-right: 5px;
+}
+.mediateca-box ul li span b {
+	position: absolute;
+	width: 135px;
+	height: 20px;
+	background: #000;
+	top: 81px;
+	left: 5px;
+	color: #fff;
+	font-family: 'Rokkitt-Regular', sans-serif;
+	font-size: 12px;
+	text-align: right;
+	font-weight: normal;
+	display: none;
+	padding-top: 3px;
+}
+.mediateca-box ul li span:hover b  {
+	display: block;
+}
+.mediateca-box ul li span b img {
+	border: 0px none;
+	top: -1px;
+	position: relative;
+}
+.mediateca-box ul li h3 {
+	margin: 0 0 0px 0;
+	font-family: 'Rokkitt-Bold';
+	font-weight: normal;
+	color: #3aa2a3;
+	font-size: 18px;
+}
+.mediateca-box ul li p {
+	margin: 0px !important;
+	line-height: 18px;
+}
+.mediateca-box ul li a {
+	margin-top: 10px;
+	display: block;
 }

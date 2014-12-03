@@ -227,6 +227,12 @@ filter: grayscale(100%);
 	top: -1px;
 	margin-right: 10px;
 }
+.lightbox .lightbox-header.red {
+	background: url(../img/tela1/header-2.jpg) repeat-x ;
+}
+.lightbox .lightbox-header.red h2 {
+	line-height: 30px;
+}
 .lightbox .close-lightbox {
 	position: absolute;
 	display: block;
@@ -235,6 +241,7 @@ filter: grayscale(100%);
 	background: url(../img/tela1/sair.png) no-repeat  ;
 	width: 36px;
 	height: 36px;
+	cursor: pointer;
 }
 .lightbox .lightbox-content {}
 /* Index */
@@ -372,3 +379,299 @@ filter: grayscale(100%);
 #fotojornalismo {top: 234px; left: 198px;}
 #livro-ilustrado {top: 309px; left: 44px;}
 #leitura-logo {top: 88px; left: 319px;}
+
+/* tela 3 */
+
+#info #tela3-conteudo {
+	width: 850px;
+	height: 700px;
+	display: block;
+	background: url(../img/tela3/tela3.jpg) no-repeat;
+}
+#dashboard, #info #voltar, #info-desenho, #info-nuvem, #pedestal, .bt-acao {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+#dashboard {
+	width: 593px;
+	height: 487px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	top: 79px;
+	left: 129px;
+}
+#dashboard.livro-ilustrado {
+	background: url(../img/tela3/livro-ilustrado.png) no-repeat;
+}
+#dashboard.fotojornalismo {
+	background: url(../img/tela3/fotojornalismo.png) no-repeat;
+}
+#dashboard.meme {
+	background: url(../img/tela3/meme.png) no-repeat;
+}
+#dashboard.pagina-web {
+	background: url(../img/tela3/pagina-web.png) no-repeat;
+}
+#dashboard.publicidade {
+	background: url(../img/tela3/publicidade.png) no-repeat;
+}
+#dashboard #dashboard-content {
+	position: relative;
+	width: 543px;
+	height: 351px;
+	background: rgba(0, 0, 0, 0);
+	top: 25px;
+	left: 24px;
+
+}
+#dashboard #dashboard-content .bt-acao {
+	width: 68px;
+	height: 68px;
+	background: url(../img/tela3/bt.png) no-repeat;
+}
+#dashboard #dashboard-content .bt-acao:hover {
+	background: url(../img/tela3/bt-h.png) no-repeat;
+}
+#dashboard #dashboard-content  #quote-1 {
+	left: 41px;
+	top: 26px;
+}
+#dashboard #dashboard-content  #quote-2 {
+	left: 432px;
+	top: 28px;
+}
+#dashboard #dashboard-content  #quote-3 {
+	left: 238px;
+	top: 193px;
+}
+#dashboard #dashboard-content .info-bt-hover {
+	position: absolute;
+	top: 79px;
+	left: -22px;
+	background: rgb(162, 58, 59);
+	width: 477px;
+	color: white;
+	font-family: 'Rokkitt-Regular';
+	font-size: 18px;
+	padding: 9px 15px 13px 15px;
+	line-height: 22px;
+	text-align: center;
+	display: none;
+}
+#dashboard #dashboard-content .bt-acao:hover .info-bt-hover {
+	display: block;
+}
+#dashboard #dashboard-content .info-bt-hover span {
+	position: relative;
+}
+#dashboard #dashboard-content .info-bt-hover span:after {
+	position: absolute;
+	top: -24px;
+	left: 10px;
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 20px 15px 20px;
+	border-color: transparent transparent rgb(162, 58, 59) transparent;
+}
+#dashboard #dashboard-content .info-bt-hover span:before {
+	position: absolute;
+	top: -10px;
+	left: -25px;
+	width: 503px;
+	height: 88px;
+	content: " ";
+	display: block;
+	border-bottom: 7px solid #383530;
+	border-right: 7px solid #383530;
+}
+#dashboard #dashboard-content #quote-2 .info-bt-hover {
+left: -413px;
+top: 77px;
+}
+#dashboard #dashboard-content #quote-2 .info-bt-hover span:after {
+left: 400px;
+}
+#dashboard #dashboard-content #quote-3 .info-bt-hover {
+left: -219px;
+top: 76px;
+}
+#dashboard #dashboard-content #quote-3 .info-bt-hover span:after {
+left: 205px;
+}
+#dashboard #main-title {
+	text-align: center;
+	position: relative;
+	top: 55px;
+}
+.opacity-black {
+	background: rgba(0, 0, 0, 0.66) !important;
+}
+#info #voltar {
+	top: 82px;
+	left: 6px;
+}
+#info-desenho {
+	top: 360px;
+	left: 0px;
+}
+#info-nuvem {
+	top: 359px;
+	left: 706px;
+}
+.bt-lightbox-st {
+
+}
+.bt-lightbox-st img {
+	z-index: 20;
+	position: relative;
+}
+.bt-lightbox-st .more-info-light {
+	z-index: 19;
+	position: absolute;
+	width: 150px;
+	background: rgb(57, 161, 162);
+	top: 24px;
+	left: 76px;
+	color: #fff;
+	padding: 10px 0px 6px 51px;
+	font-family: 'Rokkitt-Regular';
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: 5px solid rgb(58, 54, 51);
+	display: none;
+}
+.bt-lightbox-st:hover .more-info-light {
+	display: block;
+}
+.bt-lightbox-st .more-info-light span {
+	position: relative;
+}
+.bt-lightbox-st .more-info-light span:after, .bt-lightbox-st .more-info-light span:before {
+	position: absolute;
+	z-index: 19;
+	display: block;
+	content: " ";
+	top: -12px;
+	left: 150px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 39px 0 38px 26px;
+	border-color: transparent transparent transparent #39A1A2;
+}
+.bt-lightbox-st .more-info-light span:before {
+	border-width: 41px 0 38px 28px;
+	border-color: transparent transparent transparent #3A3633;
+	top: -9px;
+	left: 150px;
+}
+.bt-lightbox-st#info-nuvem .more-info-light {
+	top: 26px;
+	left: -110px;
+	padding: 10px 32px 6px 24px;
+	text-align: right;
+	width: 109px;
+}
+.bt-lightbox-st#info-nuvem .more-info-light span:after, .bt-lightbox-st#info-nuvem .more-info-light span:before {
+	left: -98px;
+	border-width: 38px 26px 38px 0;
+	border-color: transparent #39A1A2 transparent transparent;
+	top: -11px;
+}
+.bt-lightbox-st#info-nuvem .more-info-light span:before {
+	left: -100px;
+	top: -9px;
+	border-width: 41px 28px 38px 0;
+	border-color: transparent #3A3633 transparent transparent;
+}
+#pedestal {
+	top: 575px;
+	left: 198px;
+	width: 457px;
+	height: 125px;
+	background: url(../img/tela3/placa-fixa.png) no-repeat 0 bottom;
+	z-index: 15;
+}
+#pedestal #pedestal-content {
+	position: relative;
+	padding-top: 5px;
+}
+
+#pedestal #pedestal-content a {
+	position: relative;
+}
+
+#pedestal #pedestal-content a div {
+	display: none;
+	position: absolute;
+	left: -10px;
+	top: -70px;
+	background: rgb(57, 161, 162);
+	padding: 10px 17px 0 17px;
+	border-bottom: 3px solid #383530;
+	color: #fff;
+	font-family: 'Rokkitt-Regular';
+	line-height: 12px;
+	font-size: 12px;
+	height: 28px;
+	text-align: center;
+}
+#pedestal #pedestal-content a:hover div {
+	display: block;
+}
+#pedestal #pedestal-content a div:after, #pedestal #pedestal-content a div:before {
+	position: absolute;
+	top: 38px;
+	left: 33px;
+	display: block;
+	content: " ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 9px 0 8px;
+	border-color: #39A1A2 transparent transparent transparent;
+}
+#pedestal #pedestal-content a div:before {
+	left: 28px;
+	border-width: 10px 14px 0 14px;
+	border-color: #383530 transparent transparent transparent;
+}
+#pedestal #pedestal-content a#visual-bt div, #pedestal #pedestal-content a#texto-img-bt div {
+width: 94px;
+left: -29px;
+padding: 10px 12px 0 7px;
+}
+#pedestal #pedestal-content a#visual-bt div:before, #pedestal #pedestal-content a#texto-img-bt div:before {
+	left: 48px;
+}
+#pedestal #pedestal-content a#visual-bt div:after, #pedestal #pedestal-content a#texto-img-bt div:after {
+	left: 52px;
+}
+#pedestal #pedestal-content a#midiateca-bt div {
+	padding-top: 13px;
+	height: 25px;
+}
+#pedestal #pedestal-content #abc-bt {
+	margin: 0 0 0 53px;
+}
+
+#pedestal #pedestal-content #imagem-bt {
+	margin-left: -7px;
+}
+#pedestal #pedestal-content #texto-bt {
+	margin-left: -10px;
+}
+#pedestal #pedestal-content #visual-bt {
+	margin-left: -7px;
+}
+#pedestal #pedestal-content #texto-img-bt {
+	margin-left: -9px;
+}
+#pedestal #pedestal-content #midiateca-bt {
+	margin-left: -4px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Leitura Imagens - Apresentação</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="../../css/normalize.css">
+		<link rel="stylesheet" href="../../css/main.css">
+	</head>
+	<body id="info">
+		<!--[if lt IE 7]>
+			<p class="browsehappy">Você está usando um navegador <strong>muito velho</strong>. Faça o download do  <a href="https://www.google.com/intl/pt-BR/chrome/browser/">Chrome</a> Para uma melhor experiência.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+
+
+
+		<div id="wrap">
+
+			<a id="voltar" href="../../leitura.html"><img src="../../img/tela3/voltar.png"></a>
+			<div id="pedestal" >
+				<div id="pedestal-content">
+					<a id="abc-bt" href="abc/main.html">
+						<img src="../../img/tela3/abc.png">
+						<div>
+							<span class="texto-bt">O que é <br> palavra?</span>
+						</div>
+					</a>
+					<a id="imagem-bt" href="imagem/main.html">
+						<img src="../../img/tela3/imagem.png">
+						<div>
+							<span class="texto-bt">O que é <br> imagem?</span>
+						</div>
+					</a>
+					<a id="texto-bt" href="texto/main.html">
+						<img src="../../img/tela3/texto.png">
+						<div>
+							<span class="texto-bt">O que é <br> texto?</span>
+						</div>
+					</a>
+					<a id="visual-bt" href="visual/main.html">
+						<img src="../../img/tela3/visual.png">
+						<div>
+							<span class="texto-bt">O que é <br> imagem visual?</span>
+						</div>
+					</a>
+					<a id="texto-img-bt" href="texto-img/main.html">
+						<img src="../../img/tela3/texto-img.png">
+						<div>
+							<span class="texto-bt">Por que texto<br> e imagem se unem?</span>
+						</div>
+					</a>
+					<a id="midiateca-bt" href="midiateca/main.html">
+						<img src="../../img/tela3/midiateca.png">
+						<div>
+							<span class="texto-bt">Midiateca</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div id="dashboard" class="publicidade">
+				<div id="dashboard-content">
+					<a id="quote-1" class="bt-acao" href="">
+						<div class="info-bt-hover">
+							<span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</span>
+						</div>
+					</a>
+					<a id="quote-2" class="bt-acao" href="">
+						<div class="info-bt-hover">
+							<span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</span>
+						</div>
+					</a>
+					<a id="quote-3" class="bt-acao" href="">
+						<div class="info-bt-hover">
+							<span>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</span>
+						</div>
+					</a>
+				</div>
+				<div id="main-title">
+					<img src="../../img/tela3/publicidade-t.png">
+				</div>
+			</div>
+			<a class="bt-lightbox-st" id="info-desenho" href="trabalhar/main.html">
+				<div class="more-info-light">
+					<span>Como trabalhar a leitura da imagem na escola?</span>
+				</div>
+				<img src="../../img/tela3/info-esq.png">
+			</a>
+			<a class="bt-lightbox-st" id="info-nuvem" href="modos/main.html">
+				<div class="more-info-light">
+					<span>Modos de ligação entre texto e imagem</span>
+				</div>
+				<img src="../../img/tela3/info-dir.png">
+			</a>
+			<div id="tela3-conteudo">
+
+			</div>
+
+
+		</div>
+
+		<script type="text/javascript" src="../../js/vendor/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+
+
+		$("#dashboard #dashboard-content .bt-acao").hover(function () {
+			$("#dashboard #dashboard-content").toggleClass("opacity-black");
+			$("#voltar, #info-desenho, #info-nuvem, #tela3-conteudo, #pedestal, #main-title").toggleClass("grayscale");
+		});
+
+		$("#voltar").hover(function () {
+			$("#pedestal, #info-desenho, #info-nuvem, #tela3-conteudo, #dashboard").toggleClass("grayscale");
+		});
+		$("#info-nuvem").hover(function () {
+			$("#pedestal, #info-desenho, #voltar, #tela3-conteudo, #dashboard").toggleClass("grayscale");
+		});
+		$("#info-desenho").hover(function () {
+			$("#pedestal, #voltar, #info-nuvem, #tela3-conteudo, #dashboard").toggleClass("grayscale");
+		});
+		$("#pedestal").hover(function () {
+			$("#info-desenho, #info-nuvem, #tela3-conteudo, #dashboard, #voltar").toggleClass("grayscale");
+		});
+		</script>
+	</body>
+</html>

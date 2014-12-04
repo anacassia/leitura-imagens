@@ -426,6 +426,9 @@ filter: grayscale(100%);
 	left: 24px;
 
 }
+#dashboard #dashboard-content:hover {
+	background: rgba(0, 0, 0, 0.66);
+}
 #dashboard #dashboard-content .bt-acao {
 	width: 68px;
 	height: 68px;
@@ -507,6 +510,62 @@ left: 205px;
 	text-align: center;
 	position: relative;
 	top: 55px;
+	text-align: center;
+}
+#dashboard #main-title h4 {
+	display: block;
+	text-align: center;
+	font-family: 'Things_We_Said';
+	font-weight: normal;
+	margin: 7px 0 ;
+	font-size: 16px;
+}
+#dashboard #main-title a {
+	display: inline-block;
+	padding: 8px 20px;
+	color: #9c7727;
+	font-size: 12px;
+	line-height: 14px;
+	font-family: 'Rokkitt-Regular', sans-serif;
+	background: #e5cc6d;
+	background: -moz-linear-gradient(top,  #e5cc6d 0%, #e6c96c 25%, #deb865 75%, #d1a357 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5cc6d), color-stop(25%,#e6c96c), color-stop(75%,#deb865), color-stop(100%,#d1a357));
+	background: -webkit-linear-gradient(top,  #e5cc6d 0%,#e6c96c 25%,#deb865 75%,#d1a357 100%);
+	background: -o-linear-gradient(top,  #e5cc6d 0%,#e6c96c 25%,#deb865 75%,#d1a357 100%);
+	background: -ms-linear-gradient(top,  #e5cc6d 0%,#e6c96c 25%,#deb865 75%,#d1a357 100%);
+	background: linear-gradient(to bottom,  #e5cc6d 0%,#e6c96c 25%,#deb865 75%,#d1a357 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5cc6d', endColorstr='#d1a357',GradientType=0 );
+	border-bottom: 1px solid #9c8855;
+	border-top: 1px solid #ddbf65;
+	border-left: 1px solid #d9b35d;
+	border-right: 1px solid #9f8b57;
+	position: relative;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.49);
+}
+#dashboard #main-title a span:after, #dashboard #main-title a span:before, #dashboard #main-title a b:after, #dashboard #main-title a b:before{
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	content: " ";
+	display: block;
+	width: 2px;
+	height: 2px ;
+	background: rgba(126, 126, 126, 0.68);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.28);
+}
+#dashboard #main-title a span:before {
+	top: auto;
+	bottom: 2px;
+}
+#dashboard #main-title a b:after {
+	left: auto;
+	right: 2px;
+}
+#dashboard #main-title a b:before {
+	top: auto;
+	bottom: 2px;
+	left: auto;
+	right: 2px;
 }
 .opacity-black {
 	background: rgba(0, 0, 0, 0.66) !important;
@@ -518,18 +577,29 @@ left: 205px;
 #info-desenho {
 	top: 360px;
 	left: 0px;
+	width: 144px;
+	height: 340px;
+	background: url(../img/tela3/info-esq.png);
 }
 #info-nuvem {
 	top: 359px;
 	left: 706px;
+	width: 144px;
+	height: 340px;
+	background: url(../img/tela3/info-dir.png);
 }
-.bt-lightbox-st {
-
-}
-.bt-lightbox-st img {
-	z-index: 20;
+.bt-lightbox-st b{
+	width: 144px;
+	height: 144px;
+	display: block;
+	background: url(../img/tela3/info-esq.png);
 	position: relative;
+	z-index: 20;
 }
+#info-nuvem .bt-lightbox-st b{
+	background: url(../img/tela3/info-dir.png);
+}
+
 .bt-lightbox-st .more-info-light {
 	z-index: 19;
 	position: absolute;
@@ -572,20 +642,20 @@ left: 205px;
 	top: -9px;
 	left: 150px;
 }
-.bt-lightbox-st#info-nuvem .more-info-light {
+#info-nuvem .bt-lightbox-st .more-info-light {
 	top: 26px;
 	left: -110px;
 	padding: 10px 32px 6px 24px;
 	text-align: right;
 	width: 109px;
 }
-.bt-lightbox-st#info-nuvem .more-info-light span:after, .bt-lightbox-st#info-nuvem .more-info-light span:before {
+#info-nuvem .bt-lightbox-st .more-info-light span:after, #info-nuvem .bt-lightbox-st .more-info-light span:before {
 	left: -50px;
 	border-width: 38px 26px 38px 0;
 	border-color: transparent #39A1A2 transparent transparent;
 	top: -11px;
 }
-.bt-lightbox-st#info-nuvem .more-info-light span:before {
+#info-nuvem .bt-lightbox-st .more-info-light span:before {
 	left: -52px;
 	top: -9px;
 	border-width: 41px 28px 38px 0;
@@ -749,7 +819,7 @@ padding: 10px 7px 0 7px;
 	top: 81px;
 	left: 5px;
 	color: #fff;
-	font-family: 'Rokkitt-Bold', sans-serif;;
+	font-family: 'Rokkitt-Bold', sans-serif;
 	font-size: 12px;
 	text-align: right;
 	font-weight: normal;
@@ -766,7 +836,7 @@ padding: 10px 7px 0 7px;
 }
 .mediateca-box ul li h3 {
 	margin: 0 0 0px 0;
-	font-family: 'Rokkitt-Bold', sans-serif;;
+	font-family: 'Rokkitt-Bold', sans-serif;
 	font-weight: normal;
 	color: #3aa2a3;
 	font-size: 18px;

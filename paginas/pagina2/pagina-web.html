@@ -32,32 +32,32 @@
 			<a id="voltar" href="../../leitura.html"><img src="../../img/tela3/voltar.png"></a>
 			<div id="pedestal" >
 				<div id="pedestal-content">
-					<a id="abc-bt" href="abc/main.html">
+					<a id="abc-bt" href="pagina-web/abc/main.html">
 						<div>
 							<span class="texto-bt">O que é <br> palavra?</span>
 						</div>
 					</a>
-					<a id="imagem-bt" href="imagem/main.html">
+					<a id="imagem-bt" href="pagina-web/imagem/main.html">
 						<div>
 							<span class="texto-bt">O que é <br> imagem?</span>
 						</div>
 					</a>
-					<a id="texto-bt" href="texto/main.html">
+					<a id="texto-bt" href="pagina-web/texto/main.html">
 						<div>
 							<span class="texto-bt">O que é <br> texto?</span>
 						</div>
 					</a>
-					<a id="visual-bt" href="visual/main.html">
+					<a id="visual-bt" href="pagina-web/visual/main.html">
 						<div>
 							<span class="texto-bt">O que é <br> imagem visual?</span>
 						</div>
 					</a>
-					<a id="texto-img-bt" href="texto-img/main.html">
+					<a id="texto-img-bt" href="pagina-web/texto-img/main.html">
 						<div>
 							<span class="texto-bt">Por que texto<br> e imagem se unem?</span>
 						</div>
 					</a>
-					<a id="midiateca-bt" href="midiateca/main.html">
+					<a id="midiateca-bt" href="pagina-web/midiateca/main.html">
 						<div>
 							<span class="texto-bt">Midiateca</span>
 						</div>
@@ -83,21 +83,26 @@
 					</a>
 				</div>
 				<div id="main-title">
-					<img src="../../img/tela3/pagina-web-t.png">
+					<h4>Pagina Web</h4>
+					<a href="http://tvescola.mec.gov.br">tvescola.mec.gov.br<span></span><b></b></a>
 				</div>
 			</div>
-			<a class="bt-lightbox-st" id="info-desenho" href="trabalhar/main.html">
+			<span id="info-desenho">
+			<a class="bt-lightbox-st"  href="pagina-web/trabalhar/main.html">
 				<div class="more-info-light">
 					<span>Como trabalhar a leitura da imagem na escola?</span>
 				</div>
-				<img src="../../img/tela3/info-esq.png">
+				<b></b>
 			</a>
-			<a class="bt-lightbox-st" id="info-nuvem" href="modos/main.html">
+			</span>
+			<span id="info-nuvem">
+			<a class="bt-lightbox-st"  href="pagina-web/modos/main.html">
 				<div class="more-info-light">
 					<span>Modos de ligação entre texto e imagem</span>
 				</div>
-				<img src="../../img/tela3/info-dir.png">
+				<b></b>
 			</a>
+			</span>
 			<div id="tela3-conteudo">
 
 			</div>
@@ -107,20 +112,16 @@
 
 		<script type="text/javascript" src="../../js/vendor/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript">
-
-
-		$("#dashboard #dashboard-content .bt-acao").hover(function () {
-			$("#dashboard #dashboard-content").toggleClass("opacity-black");
+		$("#dashboard #dashboard-content").hover(function () {
 			$("#voltar, #info-desenho, #info-nuvem, #tela3-conteudo, #pedestal, #main-title").toggleClass("grayscale");
 		});
-
 		$("#voltar").hover(function () {
 			$("#pedestal, #info-desenho, #info-nuvem, #tela3-conteudo, #dashboard").toggleClass("grayscale");
 		});
-		$("#info-nuvem").hover(function () {
+		$("#info-nuvem b").hover(function () {
 			$("#pedestal, #info-desenho, #voltar, #tela3-conteudo, #dashboard").toggleClass("grayscale");
 		});
-		$("#info-desenho").hover(function () {
+		$("#info-desenho b").hover(function () {
 			$("#pedestal, #voltar, #info-nuvem, #tela3-conteudo, #dashboard").toggleClass("grayscale");
 		});
 		$("#pedestal").hover(function () {

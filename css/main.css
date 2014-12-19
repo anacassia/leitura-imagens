@@ -1,0 +1,897 @@
+html,
+button,
+input,
+select,
+textarea {
+	color: #222;
+}
+
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	font-family: 'Rokkitt', serif;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Atualizar
+   ========================================================================== */
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Ajudantes
+   ========================================================================== */
+
+
+
+@font-face {
+	font-family: 'Things_We_Said';
+	src: url('../doc/Things_We_Said.eot');
+	src: local('☺'), url('../doc/Things_We_Said.woff') format('woff'), url('../doc/Things_We_Said.ttf') format('truetype'), url('../doc/Things_We_Said.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+
+
+.invisible {
+	visibility: hidden;
+}
+
+
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* ==========================================================================
+   Meus
+   ========================================================================= */
+
+@-webkit-keyframes fader {
+  0%   { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fader {
+  0%   { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fader {
+  0%   { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+@keyframes fader {
+  0%   { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+#bt-entrar:hover, #bt-creditos:hover, #bt-apresentacao:hover,
+#meme:hover, #publicidade:hover, #fotojornalismo:hover, #livro-ilustrado:hover, #leitura-logo:hover, #pagina-web:hover,
+#info-desenho b:hover, #info-nuvem b:hover, #dashboard:hover, #voltar:hover
+ {
+  -webkit-animation: fader 1000ms;
+  -moz-animation:    fader 1000ms;
+  -o-animation:      fader 1000ms;
+  animation:         fader 1000ms;
+}
+
+* {transition: all ease-in-out 200ms;}
+a, a img {outline: 0px; border: 0px none; text-decoration: none;}
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.grayscale {
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+filter: grayscale(100%);
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+filter: gray;
+}
+
+#wrap {
+	width: 850px;
+	height: 700px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.mockdrop {
+	position: absolute;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.66);
+	background-image: url(../img/tela1/luz.png) ;
+	background-position: 0px bottom;
+	background-repeat: no-repeat ;
+	top: 0px;
+	left: 0px;
+	width: 850px;
+	height: 700px;
+	display: block;
+	padding: 67px 83px 0 84px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.lightbox-content {
+	padding: 22px 45px 0 45px;
+}
+.lightbox-content p {
+	font-size: 18px;
+	color: #464646;
+	margin: 0 0 20px 0;
+
+}
+.lightbox-content table {
+	margin: 0 auto 20px auto;
+	float: none;
+}
+.image-floater {
+	float: left;
+	margin-right: 20px;
+}
+.lightbox-content p strong {
+	font-weight: 700;
+	color: #a2393b;
+}
+.lightbox-content iframe {
+	margin: 0 25px 0px 0;
+	border: 0px none;
+}
+
+.lightbox {
+	background-color: #e5e7e7;
+	display: block;
+	width: 683px;
+	height: 565px;
+	border-radius: 12px;
+	position: relative;
+}
+.lightbox .lightbox-wrap {
+	position: relative;
+}
+.lightbox .lightbox-header {
+	height: 97px;
+	background: url(../img/tela1/header-1.jpg) repeat-x ;
+	text-align: center;
+	border-radius: 12px 12px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+.lightbox .lightbox-header h2 {
+	margin: 0 ;
+	display: inline-block;
+	font-weight: normal;
+	color: #e5e7e7;
+
+	font-size: 35px;
+}
+.lightbox .lightbox-header h2 img {
+	margin-right: 0px;
+	position: relative;
+	top: -1px;
+	margin-right: 10px;
+}
+.lightbox .lightbox-header.red {
+	background: url(../img/tela1/header-2.jpg) repeat-x ;
+}
+.lightbox .lightbox-header.red h2 {
+	line-height: 30px;
+}
+.lightbox .close-lightbox {
+	position: absolute;
+	display: block;
+	top: 11px;
+	right: 9px;
+	background: url(../img/tela1/sair.png) no-repeat  ;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+}
+.lightbox .lightbox-content {}
+.lightbox .lightbox-content p a { color: #333; text-decoration: underline;}
+/* Index */
+#index #bt-apresentacao, #index #bt-entrar, #index #bt-creditos {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+}
+#index #bt-apresentacao, #index #bt-entrar {
+
+	height: 86px;
+	width: 173px;
+	background-repeat: no-repeat;
+}
+#index #bt-apresentacao {
+	background: url(../img/tela1/apresentacao.png);
+	left: 240px;
+	top: 425px;
+}
+#index #bt-entrar {
+	background: url(../img/tela1/entrar.png);
+	left: 428px;
+	top: 425px;
+}
+#index #bt-creditos {
+	width: 93px;
+	height: 108px;
+	background: url(../img/tela1/creditos.png) no-repeat -20px 0px;
+	left: auto;
+	right: 14px;
+	top: 165px;
+}
+#index #tela1-conteudo {
+	width: 850px;
+	height: 700px;
+	display: block;
+	background: url(../img/tela1/tela-1-1.jpg) no-repeat;
+}
+#index #tela1-conteudo img {
+	position: absolute;
+	left: 0px; z-index: 1;
+	 top: 0px;
+}
+#index #tela1-conteudo h1 {
+	text-align: center;
+	margin: 0px auto;
+	width: 550px;
+	padding-top: 187px;
+	font-size: 58px;
+	padding-bottom: 36px;
+	color: transparent;
+}
+#index #tela1-conteudo p {
+	margin: 0px auto;
+	width: 536px;
+
+	font-size: 18px;
+	text-align: center;
+	color: #464646;
+	line-height: 24px;
+}
+
+#creditos {
+	padding: 17px 44px;
+}
+#creditos ul li {
+
+	color: #464646;
+
+	margin-bottom: 24px;
+}
+#creditos ul li strong {
+	font-weight: 700;
+	color: #39a1a2;
+}
+
+.page_navigation {
+
+	text-align: center;
+	font-size: 18px;
+	clear: both;
+}
+.no_more {
+	opacity: 0;
+	display: none !important;
+}
+.ellipse {
+	position: relative;
+	top: -17px;
+	margin: 0 10px;
+}
+.page_navigation a {
+	color: #393632;
+	display: inline-block;
+	margin: 0 0px;
+	width: 34px;
+	height: 34px;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 3px;
+}
+.page_navigation a.active_page {
+	color: #a2393b;
+}
+.page_navigation a.previous_link {
+	background: url(../img/tela1/esquerda.png) no-repeat;
+	color: transparent;
+}
+.page_navigation a.next_link {
+	background: url(../img/tela1/direita.png) no-repeat;
+	color: transparent;
+}
+/* leitura */
+#leitura #tela2-conteudo {
+	width: 850px;
+	height: 700px;
+	display: block;
+	background: url(../img/tela2/tela2main.jpg) no-repeat;
+}
+#leitura #tela2-conteudo img {
+	margin-top: 207px;
+}
+#pagina-web, #meme, #publicidade, #fotojornalismo, #livro-ilustrado, #leitura-logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+}
+#pagina-web {top: 307px; left: 675px;}
+#meme {top: 233px; left: 524px;}
+#publicidade {top: 276px; left: 348px;}
+#fotojornalismo {top: 234px; left: 197px;}
+#livro-ilustrado {top: 308px; left: 45px;}
+#leitura-logo {top: 88px; left: 319px;}
+
+/* tela 3 */
+
+#info #tela3-conteudo {
+	width: 850px;
+	height: 700px;
+	display: block;
+	background: url(../img/tela3/tela3.jpg) no-repeat;
+}
+#dashboard, #info #voltar, #info-desenho, #info-nuvem, #pedestal, .bt-acao {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+#dashboard {
+	width: 593px;
+	height: 487px;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	top: 79px;
+	left: 129px;
+}
+#dashboard.livro-ilustrado {
+	background: url(../img/tela3/livro-ilustrado.png) no-repeat;
+}
+#dashboard.fotojornalismo {
+	background: url(../img/tela3/fotojornalismo.png) no-repeat;
+}
+#dashboard.meme {
+	background: url(../img/tela3/meme.png) no-repeat;
+}
+#dashboard.pagina-web {
+	background: url(../img/tela3/pagina-web.png) no-repeat;
+}
+#dashboard.publicidade {
+	background: url(../img/tela3/publicidade.png) no-repeat;
+}
+#dashboard #dashboard-content {
+	position: relative;
+	width: 543px;
+	height: 351px;
+	background: rgba(0, 0, 0, 0);
+	top: 25px;
+	left: 24px;
+
+}
+#dashboard #dashboard-content:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+#dashboard #dashboard-content .bt-acao {
+	width: 68px;
+	height: 68px;
+	background: url(../img/tela3/bt.png) no-repeat;
+}
+#dashboard #dashboard-content .bt-acao:hover {
+	background: url(../img/tela3/bt-h.png) no-repeat;
+}
+#dashboard #dashboard-content  #quote-1 {
+	left: 41px;
+	top: 26px;
+	z-index: 91;
+}
+#dashboard #dashboard-content  #quote-2 {
+	left: 432px;
+	top: 28px;
+	z-index: 90;
+}
+#dashboard #dashboard-content  #quote-3 {
+	left: 238px;
+	top: 193px;
+	z-index: 89;
+}
+#dashboard #dashboard-content .info-bt-hover {
+	position: absolute;
+	top: 79px;
+	left: -22px;
+	background: rgb(162, 58, 59);
+	width: 477px;
+	color: white;
+
+	font-size: 18px;
+	padding: 9px 15px 13px 15px;
+	line-height: 22px;
+	text-align: center;
+	border-bottom: 7px solid #383530;
+	border-right: 7px solid #383530;
+	display: none;
+}
+#dashboard #dashboard-content .bt-acao:hover .info-bt-hover {
+	display: block;
+}
+#dashboard #dashboard-content .info-bt-hover span {
+	position: relative;
+}
+#dashboard #dashboard-content .info-bt-hover span:after {
+	position: absolute;
+	top: -24px;
+	left: 10px;
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 20px 15px 20px;
+	border-color: transparent transparent rgb(162, 58, 59) transparent;
+}
+
+#dashboard #dashboard-content #quote-2 .info-bt-hover {
+left: -413px;
+top: 77px;
+
+}
+#dashboard #dashboard-content #quote-2 .info-bt-hover span:after {
+left: 400px;
+}
+#dashboard #dashboard-content #quote-3 .info-bt-hover {
+left: -219px;
+top: 76px;
+}
+#dashboard #dashboard-content #quote-3 .info-bt-hover span:after {
+left: 205px;
+}
+#dashboard #main-title {
+	text-align: center;
+	position: relative;
+	top: 55px;
+	text-align: center;
+}
+#dashboard #main-title h4 {
+	display: block;
+	text-align: center;
+	font-family: 'Things_We_Said';
+	font-weight: normal;
+	margin: 7px 0 ;
+	font-size: 16px;
+}
+#dashboard #main-title a {
+	display: inline-block;
+	padding: 8px 20px;
+	color: #9c7727;
+	font-size: 12px;
+	line-height: 14px;
+
+	background: #e5cc6d;
+	background: -moz-linear-gradient(top,  #e5cc6d 0%, #e6c96c 25%, #deb865 75%, #d1a357 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5cc6d), color-stop(25%,#e6c96c), color-stop(75%,#deb865), color-stop(100%,#d1a357));
+	background: -webkit-linear-gradient(top,  #e5cc6d 0%,#e6c96c 25%,#deb865 75%,#d1a357 100%);
+	background: -o-linear-gradient(top,  #e5cc6d 0%,#e6c96c 25%,#deb865 75%,#d1a357 100%);
+	background: -ms-linear-gradient(top,  #e5cc6d 0%,#e6c96c 25%,#deb865 75%,#d1a357 100%);
+	background: linear-gradient(to bottom,  #e5cc6d 0%,#e6c96c 25%,#deb865 75%,#d1a357 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5cc6d', endColorstr='#d1a357',GradientType=0 );
+	border-bottom: 1px solid #9c8855;
+	border-top: 1px solid #ddbf65;
+	border-left: 1px solid #d9b35d;
+	border-right: 1px solid #9f8b57;
+	position: relative;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.49);
+}
+#dashboard #main-title a span:after, #dashboard #main-title a span:before, #dashboard #main-title a b:after, #dashboard #main-title a b:before{
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	content: " ";
+	display: block;
+	width: 2px;
+	height: 2px ;
+	background: rgba(126, 126, 126, 0.68);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.28);
+}
+#dashboard #main-title a span:before {
+	top: auto;
+	bottom: 2px;
+}
+#dashboard #main-title a b:after {
+	left: auto;
+	right: 2px;
+}
+#dashboard #main-title a b:before {
+	top: auto;
+	bottom: 2px;
+	left: auto;
+	right: 2px;
+}
+.opacity-black {
+	background: rgba(0, 0, 0, 0.66) !important;
+}
+#info #voltar {
+	top: 82px;
+	left: 6px;
+}
+#info-desenho {
+	top: 360px;
+	left: 0px;
+	width: 144px;
+	height: 340px;
+	background: url(../img/tela3/info-esq.png);
+}
+#info-nuvem {
+	top: 359px;
+	left: 706px;
+	width: 144px;
+	height: 340px;
+	background: url(../img/tela3/info-dir.png);
+}
+.bt-lightbox-st b{
+	width: 144px;
+	height: 144px;
+	display: block;
+	background: url(../img/tela3/info-esq.png);
+	position: relative;
+	z-index: 20;
+}
+#info-nuvem .bt-lightbox-st b{
+	background: url(../img/tela3/info-dir.png);
+}
+
+.bt-lightbox-st .more-info-light {
+	z-index: 19;
+	position: absolute;
+	width: 150px;
+	background: rgb(57, 161, 162);
+	top: 24px;
+	left: 76px;
+	color: #fff;
+	padding: 10px 0px 6px 51px;
+
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: 5px solid rgb(58, 54, 51);
+	display: none;
+}
+.bt-lightbox-st:hover .more-info-light {
+	display: block;
+}
+.bt-lightbox-st .more-info-light span {
+	position: relative;
+	width: 115px;
+	display: block;
+}
+.bt-lightbox-st .more-info-light span:after, .bt-lightbox-st .more-info-light span:before {
+	position: absolute;
+	z-index: 19;
+	display: block;
+	content: " ";
+	top: -12px;
+	left: 150px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 39px 0 38px 26px;
+	border-color: transparent transparent transparent #39A1A2;
+}
+.bt-lightbox-st .more-info-light span:before {
+	border-width: 41px 0 38px 28px;
+	border-color: transparent transparent transparent #3A3633;
+	top: -9px;
+	left: 150px;
+}
+#info-nuvem .bt-lightbox-st .more-info-light {
+	top: 26px;
+	left: -110px;
+	padding: 10px 32px 6px 24px;
+	text-align: right;
+	width: 109px;
+}
+#info-nuvem .bt-lightbox-st .more-info-light span:after, #info-nuvem .bt-lightbox-st .more-info-light span:before {
+	left: -50px;
+	border-width: 38px 26px 38px 0;
+	border-color: transparent #39A1A2 transparent transparent;
+	top: -11px;
+}
+#info-nuvem .bt-lightbox-st .more-info-light span:before {
+	left: -52px;
+	top: -9px;
+	border-width: 41px 28px 38px 0;
+	border-color: transparent #3A3633 transparent transparent;
+}
+#pedestal {
+	top: 575px;
+	left: 198px;
+	width: 457px;
+	height: 125px;
+	background: url(../img/tela3/placa-fixa.png) no-repeat 0 bottom;
+	z-index: 15;
+}
+#pedestal #pedestal-content {
+	position: relative;
+	padding-top: 5px;
+}
+
+#pedestal #pedestal-content a {
+	position: relative;
+}
+
+#pedestal #pedestal-content a div {
+	display: none;
+	position: absolute;
+	left: -10px;
+	top: -50px;
+	background: rgb(57, 161, 162);
+	padding: 5px 16px 5px 16px;
+	border-bottom: 3px solid #383530;
+	color: #fff;
+
+	line-height: 12px;
+	font-size: 12px;
+	height: 28px;
+	text-align: center;
+}
+#pedestal #pedestal-content a:hover div {
+	display: block;
+}
+#pedestal #pedestal-content a div:after, #pedestal #pedestal-content a div:before {
+	position: absolute;
+	top: 38px;
+	left: 33px;
+	display: block;
+	content: " ";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 9px 0 8px;
+	border-color: #39A1A2 transparent transparent transparent;
+}
+#pedestal #pedestal-content a div:before {
+	left: 28px;
+	border-width: 10px 14px 0 14px;
+	border-color: #383530 transparent transparent transparent;
+}
+#pedestal #pedestal-content a#visual-bt div, #pedestal #pedestal-content a#texto-img-bt div {
+width: 96px;
+left: -29px;
+padding: 5px 7px 5px 7px;
+}
+#pedestal #pedestal-content a#midiateca-bt div {
+	padding-bottom: 0px;
+}
+#pedestal #pedestal-content a#visual-bt div:before, #pedestal #pedestal-content a#texto-img-bt div:before {
+	left: 48px;
+}
+#pedestal #pedestal-content a#visual-bt div:after, #pedestal #pedestal-content a#texto-img-bt div:after {
+	left: 52px;
+}
+#pedestal #pedestal-content a#midiateca-bt div {
+	padding-top: 13px;
+	height: 25px;
+}
+#pedestal #pedestal-content #abc-bt {
+	margin: 0 0 0 53px;
+}
+
+#pedestal #pedestal-content #imagem-bt {
+	margin-left: -7px;
+}
+#pedestal #pedestal-content #texto-bt {
+	margin-left: -10px;
+}
+#pedestal #pedestal-content #visual-bt {
+	margin-left: -7px;
+}
+#pedestal #pedestal-content #texto-img-bt {
+	margin-left: -9px;
+}
+#pedestal #pedestal-content #midiateca-bt {
+	margin-left: -4px;
+}
+
+#pedestal #pedestal-content a{
+	width: 61px;
+	height: 61px;
+	display: inline-block;
+}
+#abc-bt {
+	background: url(../img/tela3/abc.png);
+}
+#imagem-bt {
+	background: url(../img/tela3/imagem.png);
+}
+#texto-bt {
+	background: url(../img/tela3/texto.png);
+}
+#visual-bt {
+	background: url(../img/tela3/visual.png);
+}
+#texto-img-bt {
+	background: url(../img/tela3/texto-img.png);
+}
+#midiateca-bt {
+	background: url(../img/tela3/midiateca.png);
+}
+#abc-bt:hover {
+	background: url(../img/tela3/abc-h.png);
+}
+#imagem-bt:hover {
+	background: url(../img/tela3/imagem-h.png);
+}
+#texto-bt:hover {
+	background: url(../img/tela3/texto-h.png);
+}
+#visual-bt:hover {
+	background: url(../img/tela3/visual-h.png);
+}
+#texto-img-bt:hover {
+	background: url(../img/tela3/texto-img-h.png);
+}
+#midiateca-bt:hover {
+	background: url(../img/tela3/midiateca-h.png);
+}
+.mediateca-box ul li {
+	overflow: hidden;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #c5c3c4;
+}
+.mediateca-box ul li:last-child {
+	border-bottom: 0px none;
+}
+.mediateca-box ul li span {
+	width: 145px;
+	height: 105px;
+	display: block;
+	float: left;
+	position: relative;
+	margin-right: 15px;
+}
+.mediateca-box ul li span img {
+	border: 5px solid #c6c4c7;
+	margin-right: 5px;
+}
+.mediateca-box ul li span b {
+	position: absolute;
+	width: 135px;
+	height: 20px;
+	background-color: rgba(0, 0, 0, 0.66);
+	top: 77px;
+	left: 5px;
+	color: #fff;
+	font-size: 12px;
+	text-align: right;
+	font-weight: 700;
+	display: none;
+	padding-top: 3px;
+}
+.mediateca-box ul li span:hover b  {
+	display: block;
+}
+.mediateca-box ul li span b img {
+	border: 0px none;
+	top: -1px;
+	position: relative;
+}
+.mediateca-box ul li h3 {
+	margin: 0 0 0px 0;
+	font-weight: 700;
+	color: #3aa2a3;
+	font-size: 18px;
+}
+.mediateca-box ul li p {
+	margin: 0px !important;
+	line-height: 18px;
+}
+.mediateca-box ul li a {
+	margin-top: 10px;
+	display: block;
+}

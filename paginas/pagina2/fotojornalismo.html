@@ -23,28 +23,21 @@
 			<p class="browsehappy">Você está usando um navegador <strong>muito velho</strong>. Faça o download do  <a href="https://www.google.com/intl/pt-BR/chrome/browser/">Chrome</a> Para uma melhor experiência.</p>
 		<![endif]-->
 
-		<!-- Add your site or application content here -->
-
-
 
 		<div id="wrap">
+			<a id="new-midiateca" href="midiateca.html">
+				<img src="../../img/tela3/new-midiateca.png">
 
+				<div class="tolltip-midiateca">
+					Midiateca
+				</div>
+			</a>
 			<a id="voltar" href="../../leitura.html"><img src="../../img/tela3/voltar.png"></a>
 			<div id="pedestal" >
 				<div id="pedestal-content">
-					<a id="abc-bt" href="abc.html">
-						<div>
-							<span class="texto-bt">O que é <br> palavra?</span>
-						</div>
-					</a>
 					<a id="imagem-bt" href="imagem.html">
 						<div>
 							<span class="texto-bt">O que é <br> imagem?</span>
-						</div>
-					</a>
-					<a id="texto-bt" href="texto.html">
-						<div>
-							<span class="texto-bt">O que é <br> texto?</span>
 						</div>
 					</a>
 					<a id="visual-bt" href="visual.html">
@@ -52,33 +45,45 @@
 							<span class="texto-bt">O que é <br> imagem visual?</span>
 						</div>
 					</a>
+					<a id="abc-bt" href="abc.html">
+						<div>
+							<span class="texto-bt">O que é <br> palavra?</span>
+						</div>
+					</a>
+
+					<a id="texto-bt" href="texto.html">
+						<div>
+							<span class="texto-bt">O que é <br> texto?</span>
+						</div>
+					</a>
+
 					<a id="texto-img-bt" href="unir.html">
 						<div>
 							<span class="texto-bt">Por que texto<br> e imagem se unem?</span>
 						</div>
 					</a>
-					<a id="midiateca-bt" href="midiateca.html">
+					<a id="trabalhar-bt" href="trabalhar.html">
 						<div>
-							<span class="texto-bt">Midiateca</span>
+							<span class="texto-bt">Como trabalhar a leitura <br> de imagem na escola?</span>
 						</div>
 					</a>
 				</div>
 			</div>
 			<div id="dashboard" class="fotojornalismo">
 				<div id="dashboard-content">
-					<a id="quote-1" class="bt-acao" href="">
+					<a id="quote-1" class="bt-acao" href="javascript:void(0);">
 						<div class="info-bt-hover">
-							<span>As linhas são suaves e curvas. São margeadas por linhas verticais, na extremidade à direita, e horizontais, na extremidade inferior. Essas linhas formam uma espécie de meia moldura.</span>
+							<span><cite onclick="window.location.href = 'trabalhar.html';" class="trabalhar-tip" href="trabalhar.html"></cite><b>Lorem Ipsum vel velit auctor alique</b>As linhas são suaves e curvas. São margeadas por linhas verticais, na extremidade à direita, e horizontais, na extremidade inferior. Essas linhas formam uma espécie de meia moldura.</span>
 						</div>
 					</a>
-					<a id="quote-2" class="bt-acao" href="">
+					<a id="quote-2" class="bt-acao" href="javascript:void(0);">
 						<div class="info-bt-hover">
-							<span>A imagem domina drasticamente o texto. Dentro da própria imagem, há um domínio visual de uma figura sobre a outra, de modo que o espaço ocupado pelo texto entra em sintonia muito mais com a imagem minúscula do que com a grande. Quer dizer, o tamanho do texto combina muito mais com o tamanho da pequena imagem do que com o tamanho da grande.</span>
+							<span><cite onclick="window.location.href = 'trabalhar.html';" class="trabalhar-tip" href="trabalhar.html"></cite><b>Lorem Ipsum vel velit auctor alique</b>A imagem domina drasticamente o texto. Dentro da própria imagem, há um domínio visual de uma figura sobre a outra, de modo que o espaço ocupado pelo texto entra em sintonia muito mais com a imagem minúscula do que com a grande. Quer dizer, o tamanho do texto combina muito mais com o tamanho da pequena imagem do que com o tamanho da grande.</span>
 						</div>
 					</a>
-					<a id="quote-3" class="bt-acao" href="">
+					<a id="quote-3" class="bt-acao" href="javascript:void(0);">
 						<div class="info-bt-hover">
-							<span>Relação de conteúdo entre imagem e texto
+							<span><cite onclick="window.location.href = 'trabalhar.html';" class="trabalhar-tip" href="trabalhar.html"></cite><b>Lorem Ipsum vel velit auctor alique</b>Relação de conteúdo entre imagem e texto
 Embora a imagem seja hiperdimensionada em relação ao texto verbal, ela não pode dispensar o texto, que lhe serve de legenda e que a explica, tirando o leitor da hesitação causada pelo <strong>redimensionamento</strong> da imagem..</span>
 						</div>
 					</a>
@@ -89,14 +94,6 @@ Embora a imagem seja hiperdimensionada em relação ao texto verbal, ela não po
 				</div>
 			</div>
 			<span id="info-desenho">
-			<a class="bt-lightbox-st"  href="trabalhar.html">
-				<div class="more-info-light">
-					<span>Como trabalhar a leitura da imagem na escola?</span>
-				</div>
-				<b></b>
-			</a>
-			</span>
-			<span id="info-nuvem">
 			<a class="bt-lightbox-st"  href="modos.html">
 				<div class="more-info-light">
 					<span>Modos de ligação entre texto e imagem</span>
@@ -104,6 +101,7 @@ Embora a imagem seja hiperdimensionada em relação ao texto verbal, ela não po
 				<b></b>
 			</a>
 			</span>
+
 			<div id="tela3-conteudo">
 
 			</div>
@@ -112,22 +110,6 @@ Embora a imagem seja hiperdimensionada em relação ao texto verbal, ela não po
 		</div>
 
 		<script type="text/javascript" src="../../js/vendor/jquery-1.10.2.min.js"></script>
-		<script type="text/javascript">
-		$("#dashboard #dashboard-content").hover(function () {
-			$("#voltar, #info-desenho, #info-nuvem, #tela3-conteudo, #pedestal, #main-title").toggleClass("grayscale");
-		});
-		$("#voltar").hover(function () {
-			$("#pedestal, #info-desenho, #info-nuvem, #tela3-conteudo, #dashboard").toggleClass("grayscale");
-		});
-		$("#info-nuvem b").hover(function () {
-			$("#pedestal, #info-desenho, #voltar, #tela3-conteudo, #dashboard").toggleClass("grayscale");
-		});
-		$("#info-desenho b").hover(function () {
-			$("#pedestal, #voltar, #info-nuvem, #tela3-conteudo, #dashboard").toggleClass("grayscale");
-		});
-		$("#abc-bt, #imagem-bt, #texto-bt, #visual-bt, #texto-img-bt, #midiateca-bt ").hover(function () {
-			$("#info-desenho, #info-nuvem, #tela3-conteudo, #dashboard, #voltar").toggleClass("grayscale");
-		});
-		</script>
+		<script type="text/javascript" src="../../js/internas-bt.js"></script>
 	</body>
 </html>

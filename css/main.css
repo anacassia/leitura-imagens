@@ -278,6 +278,9 @@ filter: gray;
 .lightbox .lightbox-header.red {
 	background: url(../img/tela1/header-2.jpg) repeat-x ;
 }
+.lightbox .lightbox-header.red.modify {
+	background: url(../img/tela1/header-1.jpg) repeat-x ;
+}
 .lightbox .lightbox-header.red h2 {
 	line-height: 30px;
 }
@@ -366,14 +369,16 @@ filter: gray;
 }
 #creditos ul li strong {
 	font-weight: 700;
-	color: #39a1a2;
+	color: #cc6f56;
 }
 
 .page_navigation {
-
 	text-align: center;
 	font-size: 18px;
 	clear: both;
+	width: 683px;
+	position: absolute;
+	top: 515px;
 }
 .no_more {
 	opacity: 0;
@@ -477,7 +482,7 @@ filter: gray;
 
 }
 #dashboard #dashboard-content:hover {
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.3);
 }
 #dashboard #dashboard-content .bt-acao {
 	width: 68px;
@@ -509,11 +514,10 @@ filter: gray;
 	background: rgb(162, 58, 59);
 	width: 477px;
 	color: white;
-
 	font-size: 18px;
 	padding: 9px 15px 13px 15px;
 	line-height: 22px;
-	text-align: center;
+	text-align: left;
 	border-bottom: 7px solid #383530;
 	border-right: 7px solid #383530;
 	display: none;
@@ -523,11 +527,18 @@ filter: gray;
 }
 #dashboard #dashboard-content .info-bt-hover span {
 	position: relative;
+	font-size: 14px;
+	font-family: Georgia, serif;
+	display: block;
+}
+#dashboard #dashboard-content .info-bt-hover span b {
+	font-size: 18px;
+	display: block;
 }
 #dashboard #dashboard-content .info-bt-hover span:after {
 	position: absolute;
-	top: -24px;
-	left: 10px;
+	top: -20px;
+	left: 20px;
 	content: " ";
 	display: block;
 	width: 0;
@@ -536,21 +547,64 @@ filter: gray;
 	border-width: 0 20px 15px 20px;
 	border-color: transparent transparent rgb(162, 58, 59) transparent;
 }
-
+#dashboard #dashboard-content .info-bt-hover span cite.trabalhar-tip {
+	background: url(../img/tela3/mais.jpg) no-repeat;
+	width: 23px;
+	height: 23px;
+	display: block;
+	position: absolute;
+	bottom: -5px;
+	right: -5px;
+	content: " ";
+}
 #dashboard #dashboard-content #quote-2 .info-bt-hover {
 left: -413px;
-top: 77px;
+top: 70px;
 
 }
 #dashboard #dashboard-content #quote-2 .info-bt-hover span:after {
-left: 400px;
+left: 413px;
 }
 #dashboard #dashboard-content #quote-3 .info-bt-hover {
 left: -219px;
-top: 76px;
+top: 70px;
 }
 #dashboard #dashboard-content #quote-3 .info-bt-hover span:after {
-left: 205px;
+left: 220px;
+}
+
+@-webkit-keyframes piscando {
+  0%   { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+@-moz-keyframes piscando {
+  0%   { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+@-o-keyframes piscando {
+  0%   { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+@keyframes piscando {
+  0%   { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+.bt-acao {
+-webkit-animation: piscando 2s infinite;
+-moz-animation:    piscando 2s infinite;
+-o-animation:      piscando 2s infinite;
+animation:         piscando 2s infinite;
+}
+.bt-acao:hover {
+	-webkit-animation: none;
+	-moz-animation:    none;
+	-o-animation:      none;
+	animation:         none;
 }
 #dashboard #main-title {
 	text-align: center;
@@ -650,7 +704,7 @@ left: 205px;
 	z-index: 19;
 	position: absolute;
 	width: 150px;
-	background: rgb(57, 161, 162);
+	background: #a73d3f;
 	top: 24px;
 	left: 76px;
 	color: #fff;
@@ -680,7 +734,7 @@ left: 205px;
 	height: 0;
 	border-style: solid;
 	border-width: 39px 0 38px 26px;
-	border-color: transparent transparent transparent #39A1A2;
+	border-color: transparent transparent transparent #a73d3f;
 }
 .bt-lightbox-st .more-info-light span:before {
 	border-width: 41px 0 38px 28px;
@@ -698,7 +752,7 @@ left: 205px;
 #info-nuvem .bt-lightbox-st .more-info-light span:after, #info-nuvem .bt-lightbox-st .more-info-light span:before {
 	left: -50px;
 	border-width: 38px 26px 38px 0;
-	border-color: transparent #39A1A2 transparent transparent;
+	border-color: transparent #a73d3f transparent transparent;
 	top: -11px;
 }
 #info-nuvem .bt-lightbox-st .more-info-light span:before {
@@ -706,6 +760,12 @@ left: 205px;
 	top: -9px;
 	border-width: 41px 28px 38px 0;
 	border-color: transparent #3A3633 transparent transparent;
+}
+#info-nuvem .bt-lightbox-st .more-info-light {
+	background: #a73d3f;
+}
+#info-nuvem .bt-lightbox-st .more-info-light span:after {
+	border-color: transparent #a73d3f transparent transparent;
 }
 #pedestal {
 	top: 575px;
@@ -760,9 +820,19 @@ left: 205px;
 	border-color: #383530 transparent transparent transparent;
 }
 #pedestal #pedestal-content a#visual-bt div, #pedestal #pedestal-content a#texto-img-bt div {
-width: 96px;
-left: -29px;
-padding: 5px 7px 5px 7px;
+	width: 96px;
+	left: -29px;
+	padding: 5px 7px 5px 7px;
+}
+#pedestal #pedestal-content a#trabalhar-bt div:before {
+	left: 66px;
+}
+#pedestal #pedestal-content a#trabalhar-bt div:after {
+	left: 71px;
+}
+#pedestal #pedestal-content a#trabalhar-bt div {
+	width: 115px;
+	left: -50px;
 }
 #pedestal #pedestal-content a#midiateca-bt div {
 	padding-bottom: 0px;
@@ -778,11 +848,12 @@ padding: 5px 7px 5px 7px;
 	height: 25px;
 }
 #pedestal #pedestal-content #abc-bt {
-	margin: 0 0 0 53px;
+	margin-left: -7px;
 }
 
 #pedestal #pedestal-content #imagem-bt {
-	margin-left: -7px;
+
+	margin: 0 0 0 58px;
 }
 #pedestal #pedestal-content #texto-bt {
 	margin-left: -10px;
@@ -794,6 +865,9 @@ padding: 5px 7px 5px 7px;
 	margin-left: -9px;
 }
 #pedestal #pedestal-content #midiateca-bt {
+	margin-left: -4px;
+}
+#pedestal #pedestal-content #trabalhar-bt {
 	margin-left: -4px;
 }
 
@@ -820,6 +894,9 @@ padding: 5px 7px 5px 7px;
 #midiateca-bt {
 	background: url(../img/tela3/midiateca.png);
 }
+#trabalhar-bt {
+	background: url(../img/tela3/trabalhar.png);
+}
 #abc-bt:hover {
 	background: url(../img/tela3/abc-h.png);
 }
@@ -837,6 +914,9 @@ padding: 5px 7px 5px 7px;
 }
 #midiateca-bt:hover {
 	background: url(../img/tela3/midiateca-h.png);
+}
+#trabalhar-bt:hover {
+	background: url(../img/tela3/trabalhar-h.png);
 }
 .mediateca-box ul li {
 	overflow: hidden;
@@ -894,4 +974,42 @@ padding: 5px 7px 5px 7px;
 .mediateca-box ul li a {
 	margin-top: 10px;
 	display: block;
+}
+#new-midiateca {
+	position: absolute;
+	top: 85px;
+	right: 40px;
+	width: 93px;
+	height: 84px;
+	z-index: 20;
+}
+#new-midiateca .tolltip-midiateca {
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	width: 80px;
+	height: 27px;
+	padding-top: 10px;
+	background: #39a1a2;
+	position: absolute;
+	top: 95px;
+	right: 0px;
+	border-bottom: 2px solid #393632;
+	display: none;
+
+}
+#new-midiateca:hover .tolltip-midiateca {
+	display: block;
+}
+#new-midiateca .tolltip-midiateca:after {
+	position: absolute;
+	top: -9px;
+	right: 19px;
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 20px 15px 20px;
+	border-color: transparent transparent #39a1a2 transparent;
 }

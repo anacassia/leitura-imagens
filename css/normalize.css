@@ -102,7 +102,7 @@ body {
  */
 
 a:focus {
-    outline: thin dotted;
+    outline: 0;
 }
 
 /**
@@ -525,4 +525,8 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
 }
